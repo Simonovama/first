@@ -89,50 +89,37 @@ switch ($Комплектация) {
 ?>
 
 <?php
-//Задание 6
-$BMW["Model"]=" X5";
-$BMW["Speed"]=" 120";
-$BMW["Doors"]=" 5";
-$BMW["Year"]=" 2015";
-echo "<br/>BMW";
-echo $BMW["Model"];
-echo $BMW["Speed"];
-echo $BMW["Doors"];
-echo $BMW["Year"];
+$car2["<br/>BMW"]=array(
+    "Model"=>"X5",
+    "Speed"=>"120",
+    "Doors"=>"5",
+    "Year"=>"2015");
+foreach ($car2 as $name => $value) {echo $name." ".$value["Model"]." ".$value["Speed"]." ".$value["Doors"]." ".$value["Year"]." ";}
 ?>
 
 <?php
-$Toyota["Model"]=" Corolla";
-$Toyota["Speed"]=" 150";
-$Toyota["Doors"]=" 4";
-$Toyota["Year"]=" 2013";
-echo "<br/>Toyota";
-echo $Toyota["Model"];
-echo $Toyota["Speed"];
-echo $Toyota["Doors"];
-echo $Toyota["Year"];
+$car1["<br/>Toyota"]=array(
+"Model"=>"Corolla",
+"Speed"=>"150",
+"Doors"=>"4",
+"Year"=>"2013");
+foreach ($car1 as $name => $value) {echo $name." ".$value["Model"]." ".$value["Speed"]." ".$value["Doors"]." ".$value["Year"]." ";}
 ?>
 
 <?php
-$Opel["Model"]=" Insignia";
-$Opel["Speed"]=" 200";
-$Opel["Doors"]=" 5";
-$Opel["Year"]=" 2013";
-echo "<br/>Opel";
-echo $Opel["Model"];
-echo $Opel["Speed"];
-echo $Opel["Doors"];
-echo $Opel["Year"];
+$car["<br/>Opel"]=array(
+"Model"=>"Insignia",
+"Speed"=>"200",
+"Doors"=>"5",
+"Year"=>"2013");
+foreach ($car as $name => $value) {echo $name." ".$value["Model"]." ".$value["Speed"]." ".$value["Doors"]." ".$value["Year"]." ";}
 ?>
 
 <?php //Задача вывод данных по заявке на кредит.
-$Заявка ["Фамилия"]=" Иванов";
-$Заявка ["Авто"]=" JAC";
-$Заявка ["Стоимость"]=" 1200000";
-$Заявка ["Взнос"]=' 30%';
-echo "<br/>Заявка";
-echo $Заявка["Фамилия"];
-echo $Заявка["Авто"];
-echo $Заявка["Стоимость"];
-echo $Заявка["Взнос"];
+$File["<br/>Заявка"]=array(
+"Фамилия"=>"Иванов",
+"Авто"=>"JAC",
+"Стоимость"=>"1200000",
+"Взнос"=>'30%');
+foreach ($File as $name => $value) {echo $name." ".$value["Фамилия"]." ".$value["Авто"]." ".$value["Стоимость"]." ".$value["Взнос"]." ";}
 ?>
